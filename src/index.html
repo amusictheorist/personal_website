@@ -115,13 +115,119 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Harmonic Spiral Visualizer</h3>
+                <div>
+                  <p class="mb-4">
+                    A web-based visualization tool for exploring musical ratios in a logarithmic harmonic spiral. The spiral represents frequency relationships in a continuous space, making octave equivalence, harmonic distance, and generator-based structures visually intuitive. Part of the larger suite of Just Intonation Tools web apps.
+                  </p>
+                  <p class="mb-4">
+                    Built with a React frontend and SVG-based rendering, the app allows users to input ratios or batches of ratios, plot them dynamically, and visualize relationships via generator rays, octave lines, and interactive labels. The interface supports keyboard input, point selection, and real-time updates, with ongoing development focused on tighter integration with other just-intonation tools in the project.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://amusictheorist-just-intonation-tools.netlify.app/spiral"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/amusictheorist/just_intonation_tools"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://amusictheorist-just-intonation-tools.netlify.app/spiral" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Harmonic spiral visualizer"
+                      class="img-fluid"
+                      src="assets/spiral.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Ratio Lattice Visualizer</h3>
+                <div>
+                  <p class="mb-4">
+                    An interactive 3D ratio lattice for visualizing just-intonation pitch structures in space. Ratios are represented as points in a lattice organized by prime-factor relationships, allowing users to explore harmonic structure, proximity, and symmetry beyond octave-reduced pitch-class space. Part of the larger suite of Just Intonation Tools web apps.
+                  </p>
+                  <p class="mb-4">
+                    The app is built with React and Three.js, using custom geometry and scene-management utilities to support multiple lattice modes (cubic, radial, and expanded variants). Users can adjust scaling, rotation, and layout parameters in real time, toggle structural features, and navigate between local and global harmonic views. The lattice shares underlying ratio-parsing and factorization logic with the other tools in the suite.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://amusictheorist-just-intonation-tools.netlify.app/lattice"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/amusictheorist/just_intonation_tools"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://amusictheorist-just-intonation-tools.netlify.app/lattice" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Ratio lattice visualizer"
+                      class="img-fluid"
+                      src="assets/lattice.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Harry Somers at 100 - Reflections on his Life and Legacy</h3>
                 <div>
                   <p class="mb-4">
-                    A simple static site for the upcoming symposium celebrating Harry Somers's life and work at the University of Toronto's Faculty of Music.
+                    A simple static site for the symposium celebrating Harry Somers's life and work at the University of Toronto's Faculty of Music, held on Saturday, September 27, 2026.
                   </p>
                   <p class="mb-4">
-                    The app uses Eleventy (11ty) to generate the static site, using a template for general layout, header, and footer, and several pages, and is styled with responsive Tailwind CSS throughout. The site includes a registration form and webhook connected to Netlify for form submission notifications. Currently a live site until the symposium takes place, after which the repository will be converted to a Github template.
+                    The app uses Eleventy (11ty) to generate the static site, using a template for general layout, header, footer, several pages, and is styled with responsive Tailwind CSS throughout. The site includes a registration form and webhook connected to Netlify for form submission notifications. Currently still live.
                   </p>
                 </div>
                 <a
@@ -153,7 +259,7 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Draw path mode on Transformational Tonnetz"
+                      alt="Home page for the Harry Somers symposium website"
                       class="img-fluid"
                       src="assets/somers.png"
                     />
@@ -174,17 +280,17 @@
                     The <em>European Refugee Musicians in Canada</em> (ERMiC) online biographical dictionary explores the lives and legacies of musical artists who arrived in Canada between 1937 and 1950 as refugees from Nazi-occupied Europe, and is an ongoing research project at the University of Toronto's Faculty of Music funded by the Social Sciences and Humanities Research Council of Canada.
                   </p>
                   <p class="mb-4">
-                    The site is a React app scaffolded with Create React App and styled with Tailwind CSS. All the data for the app is stored and managed in the <a href="https://www.contentful.com" rel="noreferrer" target="_blank">Contentful</a>, and the app fetches the data via Contentful's GraphQL API. The dictionary supports broad and specific searches by keyword with a navigable dropdown menu, as well as a browse feature for all the dictionary entries. The site will be launching publicly soon, so stay posted!
+                    The site is a React app scaffolded with Create React App and styled with Tailwind CSS. All the data for the app is stored and managed in the <a href="https://www.contentful.com" rel="noreferrer" target="_blank">Contentful</a> database, and the app fetches the data via Contentful's GraphQL API. The dictionary supports broad and specific searches by keyword with a navigable dropdown menu, as well as a browse feature for all the dictionary entries.
                   </p>
                 </div>
-                <!-- <a
+                <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="https://amusictheorist-tonnetz-webapp.netlify.app"
+                  href="https://ermic.ca"
                 >
                   See Live
-                </a> -->
+                </a>
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -274,20 +380,20 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Just Intonation Tools</h3>
+                <h3 class="project-wrapper__text-title">Set Calculator</h3>
                 <div>
                   <p class="mb-4">
-                    A web app in progress implementing interactive music theory tools based on my dissertation. I started this project to learn Python, using Django for the backend and React for the frontend.
+                    A calculator and analysis tool for just-intonation pitch sets, designed to compare harmonic structure across multiple theoretical models. The app treats sets explicitly as collections of ratios or partials, supporting both pitch space and pitch-class space interpretations. Part of the larger suite of Just Intonation Tools web apps.
                   </p>
                   <p class="mb-4">
-                    Currently, the app features a set calculator and a 3D ratio lattice generator. The calculator, built with custom Python classes, operates on set theory from my dissertation, enabling number input, set calculation, and transposition. The lattice generator uses Three.js to visualize ratios as spheres in an interactive 3D model. More features and advanced functionalities are planned as development continues.
+                    Implemented with a React frontend and Python backend, the calculator computes set in various forms and harmonic complexity measures, and also allows the user to transform the set further.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="https://amusictheorist-just-intonation-tools.netlify.app"
+                  href="https://amusictheorist-just-intonation-tools.netlify.app/calculator"
                 >
                   See Live
                 </a>
@@ -295,7 +401,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="https://github.com/amusictheorist/set_calculator"
+                  href="https://github.com/amusictheorist/just_intonation_tools"
                 >
                   Source Code
                 </a>
@@ -312,9 +418,9 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Home page of set calculator"
+                      alt="Set calculator app"
                       class="img-fluid"
-                      src="assets/just-intonation-tools.jpg"
+                      src="assets/set-calculator.jpg"
                     />
                   </div>
                 </a>
