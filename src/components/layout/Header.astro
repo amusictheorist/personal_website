@@ -1,0 +1,53 @@
+---
+const navItems = [
+  { href: "/development", label: "Development" },
+  { href: "/music-theory", label: "Music Theory" },
+  { href: "/contact", label: "Contact" },
+  { href: "/AMT_CV.pdf", label: "CV", target: '_blank' }
+];
+
+const currentPath = Astro.url.pathname; 
+---
+
+<header class="border-b border-neutral-200 bg-stone-50/90 backdrop-blur">
+  <div class="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-5 text-sm md:flex-row md:items-center md:justify-between md:px-10">
+    <a
+      href="/"
+      class="flex items-center gap-3 text-base font-semibold tracking-tight text-neutral-950"
+      aria-label="Alexis Millares Thomson home"
+    >
+      <img src="/favicon.svg" alt="" class="h-8 w-auto" />
+      <span>Alexis Millares Thomson</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <ul class="flex flex-wrap gap-x-1 gap-y-2">
+        {
+          navItems.map((item) => {
+            const isActive =
+              item.href === "/"
+                ? currentPath === "/"
+                : currentPath.startsWith(item.href);
+
+            return (
+              <li>
+                <a
+                  href={item.href}
+                  target={item.target}
+                  rel={item.target === '_blank' ? 'noopener noreferrer' : undefined}
+                  aria-current={isActive ? "page" : undefined}
+                  class:list={[
+                    "rounded-full px-2 py-1.5 text-neutral-700 transition hover:bg-neutral-200/70 hover:text-neutral-950",
+                    isActive && "bg-(--color-accent) text-white hover:bg-(--color-accent) hover:text-white",
+                  ]}
+                >
+                  {item.label}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
